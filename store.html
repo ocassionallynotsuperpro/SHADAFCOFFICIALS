@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<!--
+	SHADAFC by Deth
+	satyadeth.net | @satyadeth
+	Free for personal and commercial use under the CCA 3.0 license (Satyadeth.net/license)
+-->
+<html>
+
+<head>
+	<title>SHADA FC OFFICIAL</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+
+						<!-- Logo -->
+						<h1><a href="index.html" id="logo">SHADA FC</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<a href="index.html">Homepage</a>
+							<a href="store.html">Store</a>
+							<a href="book.html">Book Now</a>
+							<a href="squad.html">Squad</a>
+							<a href="About.html">About</a>
+							<a href="Video.html">Video</a>
+
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+  <!-- Minimal CSS: include this or merge into your assets/css/main.css -->
+  <style>
+    :root {
+      --card-bg: #fff;
+      --muted: #666;
+      --brand: #d94b3d;
+    }
+    body { font-family: "Segoe UI", Roboto, Arial, sans-serif; margin: 0; background:#f4f4f4; color:#333; }
+    .store-wrap{max-width:1200px;margin:40px auto;padding:0 20px;}
+    h2.section-title{font-size:28px;margin-bottom:18px;}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+    .product-card{background:var(--card-bg);border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column;}
+    .product-img img{width:100%;height:200px;object-fit:cover;}
+    .product-info{padding:16px;flex:1;display:flex;flex-direction:column;}
+    .product-title{margin:0 0 8px 0;font-size:18px;}
+    .product-desc{margin:0 0 12px 0;color:var(--muted);flex:1;}
+    .product-price{font-weight:700;margin-bottom:12px;}
+    .btn-product{
+      border:0;background:transparent;padding:10px 14px;border-radius:6px;cursor:pointer;
+      transition: transform .15s ease, box-shadow .15s ease;
+      font-weight:700;outline:none;position:relative;
+      background:linear-gradient(180deg, #ff6b5b 0%, #d94b3d 100%);
+      color:white;
+      box-shadow:0 6px 18px rgba(217,75,61,.18);
+    }
+    /* Hover effect */
+    .btn-product:hover{
+      transform: translateY(-4px) scale(1.02);
+      box-shadow:0 10px 30px rgba(217,75,61,.28);
+    }
+
+    /* small badge */
+    .product-badge{position:absolute;margin:12px 0 0 12px;background:#ffddde;color:#7a1e14;padding:5px 8px;border-radius:3px;font-size:12px;}
+    .product-img{position:relative;}
+    /* toast */
+    .toast{position:fixed;right:18px;bottom:18px;background:#222;color:#fff;padding:10px 14px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.2);opacity:0;transform:translateY(12px);transition:opacity .25s,transform .25s;}
+    .toast.show{opacity:1;transform:none;}
+    /* cart icon */
+    .cart-count{display:inline-block;background:#fff;color:#d94b3d;padding:2px 8px;border-radius:999px;margin-left:8px;font-weight:700;font-size:12px;border:1px solid rgba(217,75,61,.12);}
+  </style>
+</head>
+<body>
+  <div class="store-wrap">
+    <h2 class="section-title">Official Store</h2>
+
+    <div class="products" id="products">
+      <!-- Product 1 (uses uploaded image path) -->
+      <div class="product-card">
+        <div class="product-img">
+          <span class="product-badge">New</span>
+          <img src="/mnt/data/4fd25f08-b6b3-48e8-bc7f-7db68c219a2c.png" alt="Home Jersey">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Home Jersey (Standard White King Jersey)</h3>
+          <p class="product-desc">Official Shada FC home jersey with premium fabric and club crest.</p>
+          <div class="product-price">$34.99</div>
+          <button class="btn-product" onclick="addToCart('Home Jersey (White)', 34.99)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1587226453108-8ef6a08cc541?auto=format&fit=crop&w=1000&q=80" alt="Away Jersey">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Away Jersey (Grey)</h3>
+          <p class="product-desc">Modern away jersey with moisture-wicking technology.</p>
+          <div class="product-price">$34.99</div>
+          <button class="btn-product" onclick="addToCart('Away Jersey (Grey)', 34.99)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-img">
+          <span class="product-badge">Sale</span>
+          <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=80" alt="Shada FC Tee">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Shada FC Tee</h3>
+          <p class="product-desc">Premium cotton t-shirt with the Shada FC logo.</p>
+          <div class="product-price">$24.99</div>
+          <button class="btn-product" onclick="addToCart('Shada FC Tee', 24.99)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1000&q=80" alt="Shada FC Bottle">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Shada FC Bottle</h3>
+          <p class="product-desc">Insulated stainless steel bottle with club logo.</p>
+          <div class="product-price">$19.99</div>
+          <button class="btn-product" onclick="addToCart('Shada FC Bottle', 19.99)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <div class="product-img">
+          <span class="product-badge">Popular</span>
+          <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=1000&q=80" alt="Shada FC Cap">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Shada FC Cap</h3>
+          <p class="product-desc">Adjustable cap with club logo and UV protection.</p>
+          <div class="product-price">$22.99</div>
+          <button class="btn-product" onclick="addToCart('Shada FC Cap', 22.99)">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- simple cart & toast -->
+    <div style="margin-top:22px;">
+      <strong>Cart:</strong> <span id="cartCount" class="cart-count">0</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">Added to cart</div>
+
+  <!-- Firebase (compat for easier usage) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
+  <script>
+    // ====== PASTE YOUR FIREBASE CONFIG HERE ======
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMQfSUPh_2QrIuib9uzJy3Z_nBUpx9-JE",
+      authDomain: "shada-fc-website.firebaseapp.com",
+      databaseURL: "https://shada-fc-website-default-rtdb.firebaseio.com",
+      projectId: "shada-fc-website",
+      storageBucket: "shada-fc-website.firebasestorage.app",
+      messagingSenderId: "373252886406",
+      appId: "1:373252886406:web:273e05d50f09efcbc66607",
+      measurementId: "G-3Y3DQFJV2S"
+    };
+    // =============================================
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    // --- Utilities ---
+    function showToast(text = 'Added to cart') {
+      const t = document.getElementById('toast');
+      t.textContent = text;
+      t.classList.add('show');
+      setTimeout(()=> t.classList.remove('show'), 2000);
+    }
+
+    // Keep a local cart count (UI only)
+    let localCart = JSON.parse(localStorage.getItem('shada_cart')) || [];
+    updateCartBadge();
+
+    function updateCartBadge(){
+      const count = localCart.reduce((s,i)=> s + (i.quantity||1), 0);
+      document.getElementById('cartCount').textContent = count;
+    }
+
+    // addToCart pushes an order to Firebase Realtime DB
+    function addToCart(name, price) {
+      // For demo: simple 1 quantity order; you can expand to show a modal for selecting qty/name inputs
+      const order = {
+        productName: name,
+        price: Number(price),
+        quantity: 1,
+        status: 'pending',    // admin can update to "responded" later
+        createdAt: Date.now()
+      };
+
+      // push to Firebase under /orders
+      const newRef = db.ref('orders').push();
+      newRef.set(order)
+        .then(()=> {
+          // store locally too for cart badge example
+          localCart.push({...order, id: newRef.key});
+          localStorage.setItem('shada_cart', JSON.stringify(localCart));
+          updateCartBadge();
+          showToast('Order placed — Admin will be notified');
+        })
+        .catch(err => {
+          console.error('Firebase write failed', err);
+          showToast('Order failed — try again');
+        });
+    }
+  </script>
+
+  		<!-- Copyright -->
+		<div id="copyright">
+			&copy; Untitled. All rights reserved. | Design: <a href="....">SHADA FC</a>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,1455 @@
+<!DOCTYPE HTML>
+<!--
+	SHADAFC by Deth
+	satyadeth.net | @satyadeth
+	Free for personal and commercial use under the CCA 3.0 license (Satyadeth.net/license)
+-->
+<html>
+
+<head>
+	<title>SHADA FC OFFICIAL</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+
+						<!-- Logo -->
+						<h1><a href="index.html" id="logo">SHADA FC</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<a href="index.html">Homepage</a>
+							<a href="store.html">Store</a>
+							<a href="book.html">Book Now</a>
+							<a href="squad.html">Squad</a>
+							<a href="About.html">About</a>
+							<a href="Video.html">Video</a>
+
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+					</div>
+				</div>
+			</div>
+    <style>
+        :root {
+            --primary-color: #00529F;
+            --secondary-color: #ED1C24;
+            --accent-color: #FFC72C;
+            --dark-color: #1a1a1a;
+            --light-color: #f5f5f5;
+            --text-color: #333;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+        }
+
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .team-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .team-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .team-nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/seed/shadafcstadium/1600/500.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 80px;
+            z-index: 90;
+        }
+
+        .filter-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .search-box {
+            position: relative;
+            flex-grow: 1;
+            max-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 8px 40px 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .search-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #777;
+        }
+
+        /* Player Grid Section */
+        .players-section {
+            padding: 60px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+        }
+
+        .players-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .player-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .player-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .player-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .player-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .player-card:hover .player-image img {
+            transform: scale(1.1);
+        }
+
+        .player-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .player-position {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .player-info {
+            padding: 20px;
+        }
+
+        .player-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+
+        .player-nationality {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .player-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .player-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .rating-stars {
+            color: var(--accent-color);
+        }
+
+        .rating-value {
+            font-weight: 700;
+            margin-left: 5px;
+        }
+
+        /* Player Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            max-width: 800px;
+            margin: 50px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            animation: modalOpen 0.5s ease;
+        }
+
+        @keyframes modalOpen {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background-color: white;
+            transform: rotate(90deg);
+        }
+
+        .modal-header {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .modal-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-header-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+        }
+
+        .modal-body {
+            padding: 30px;
+        }
+
+        .player-badge {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .badge-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--primary-color);
+        }
+
+        .badge-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .badge-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+
+        .badge-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .badge-details span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+        }
+
+        .badge-details i {
+            color: var(--primary-color);
+            width: 20px;
+        }
+
+        .player-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .stat-details {
+            flex-grow: 1;
+        }
+
+        .stat-name {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .stat-value-large {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+
+        .player-bio {
+            margin-bottom: 30px;
+        }
+
+        .player-bio h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .player-bio p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .player-achievements {
+            margin-bottom: 30px;
+        }
+
+        .player-achievements h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .achievement-list {
+            list-style: none;
+        }
+
+        .achievement-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .achievement-list li:last-child {
+            border-bottom: none;
+        }
+
+        .achievement-list i {
+            color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a3a52 0%, #0d2339 100%);
+            color: #ffffff;
+            padding: 70px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-section {
+            margin-bottom: 30px;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-logo::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #b8c7d9;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .footer-section h3::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #b8c7d9;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            font-size: 15px;
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #004d98;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+            transform: translateX(5px);
+        }
+
+        .footer-links a:hover i {
+            color: #a50044;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: linear-gradient(135deg, #004d98 0%, #a50044 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer form {
+            margin-top: 15px;
+        }
+
+        footer input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        footer input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        footer input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #004d98;
+            outline: none;
+        }
+
+        .btn-product {
+            background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .btn-product:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b8c7d9;
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .players-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            .player-stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            
+            .filter-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-box {
+                max-width: 100%;
+            }
+            
+            .players-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 20px;
+            }
+            
+            .modal-content {
+                margin: 20px;
+            }
+            
+            .player-badge {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .players-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>Meet Our Squad</h2>
+            <p>Get to know the talented players who represent SHADA FC with passion and determination on the pitch.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All Players</button>
+                <button class="filter-btn" data-filter="goalkeeper">Goalkeepers</button>
+                <button class="filter-btn" data-filter="defender">Defenders</button>
+                <button class="filter-btn" data-filter="midfielder">Midfielders</button>
+                <button class="filter-btn" data-filter="forward">Forwards</button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="player-search" placeholder="Search for a player...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Section -->
+    <section class="players-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Team Squad</h2>
+            </div>
+            <div class="players-grid" id="players-grid">
+                <!-- Player cards will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Modal -->
+    <div class="modal" id="player-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <img src="" alt="" id="modal-player-image">
+                <div class="modal-header-overlay">
+                    <h2 id="modal-player-name"></h2>
+                    <p id="modal-player-position"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="player-badge">
+                    <div class="badge-photo">
+                        <img src="" alt="" id="modal-player-badge-photo">
+                    </div>
+                    <div class="badge-info">
+                        <h3 id="modal-player-fullname"></h3>
+                        <div class="badge-details">
+                            <span><i class="fas fa-tshirt"></i> Number: <span id="modal-player-number"></span></span>
+                            <span><i class="fas fa-globe"></i> Nationality: <span id="modal-player-nationality"></span></span>
+                            <span><i class="fas fa-birthday-cake"></i> Age: <span id="modal-player-age"></span></span>
+                            <span><i class="fas fa-ruler-vertical"></i> Height: <span id="modal-player-height"></span></span>
+                            <span><i class="fas fa-weight"></i> Weight: <span id="modal-player-weight"></span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="stat-details">
+                            <div class="stat-name">Goals</div>
+                            <div class="stat-value-large" id="modal-player-goals"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="stat-details">
+                            <div class="stat-name">Assists</div>
+                            <div class="stat-value-large" id="modal-player-assists"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-square"></i>
+                        </div>
+                        <div class="stat-details">
+                            <div class="stat-name">Appearances</div>
+                            <div class="stat-value-large" id="modal-player-appearances"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-details">
+                            <div class="stat-name">Rating</div>
+                            <div class="stat-value-large" id="modal-player-rating"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-bio">
+                    <h4>Biography</h4>
+                    <p id="modal-player-bio"></p>
+                </div>
+                
+                <div class="player-achievements">
+                    <h4>Achievements</h4>
+                    <ul class="achievement-list" id="modal-player-achievements">
+                        <!-- Achievements will be added by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Shada FC</div>
+                <p>Professional football club dedicated to excellence both on and off the pitch. Join us in our journey to greatness!</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1DCw9bJSBf/?mibextid=wwXIfr" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@shada_fc?_t=ZS-90vZB2JcKFL&_r=1" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/shada_fc?igsh=MWVtcms0ZHdxNnV4" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-arrow-right"></i> Home</a></li>
+                    <li><a href="#store"><i class="fas fa-arrow-right"></i> Store</a></li>
+                    <li><a href="#enroll"><i class="fas fa-arrow-right"></i> Enroll</a></li>
+                    <li><a href="#status"><i class="fas fa-arrow-right"></i> Status</a></li>
+                    <li><a href="#book"><i class="fas fa-arrow-right"></i> Book</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><a href="https://maps.app.goo.gl/SyWWYNXWPiVpEia59?g_st=com.google.maps.preview.copy"><i class="fas fa-map-marker-alt"></i> 60m road, Kick-Off Soccer Club</a></li>
+                    <li><a href="tel:+85589407953"><i class="fas fa-phone"></i> +855 89 407 953</a></li>
+                    <li><a href="mailto:shadafccambodia@gmail.com"><i class="fas fa-envelope"></i> shadafccambodia@gmail.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Sun: 9AM - 10PM</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates, offers, and club news.</p>
+                <form>
+                    <input type="email" placeholder="Your Email" style="padding: 0.8rem; width: 100%; margin: 1rem 0; border-radius: 5px; border: none;">
+                    <button class="btn-product">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Shada FC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Player data
+        const players = [
+            {
+                id: 1,
+                name: "MO",
+                position: "Forward",
+                positionType: "forward",
+                number: 10,
+                nationality: "Egyptian",
+                age: 28,
+                height: "188 cm",
+                weight: "82 kg",
+                image: "pices/MO.jpg",
+                badgePhoto: "pices/MO.jpg",
+                goals: 86,
+                assists: 68,
+                appearances: 32,
+                rating: 8.5,
+                bio: "MO is the experienced shot-stopper who joined SHADA FC in 2024. Known for his incredible reflexes and commanding presence in the box, MO has been instrumental in many clean sheets for the team.",
+                achievements: [
+                    "Team Captain (2025-Present)",
+                    "Golden Glove Winner (2025)",
+                    "Player of the Month (July 2025)"
+                ]
+            },
+            {
+                id: 2,
+                name: "SEMO ELFAR",
+                position: "Striker",
+                positionType: "forward",
+                number: 91,
+                nationality: "Egyptian",
+                age: 33,
+                height: "182 cm",
+                weight: "78 kg",
+                image: "pices/semo.jpg",
+                badgePhoto: "pices/semo.jpg",
+                goals: 69,
+                assists: 57,
+                appearances: 34,
+                rating: 7.8,
+                bio: "SEMO ELFAR is a versatile forward who can play in the center or on the right side. His tactical intelligence and ability to read the game make him a valuable asset to the team's attacking structure.",
+                achievements: [
+                    "Best Visionary Player (2020)",
+                    "Player of the Month (September 2025)",
+                    "Most Tackles (2024 Season)"
+                ]
+            },
+            {
+                id: 3,
+                name: "Mehoo",
+                position: "Midfielder",
+                positionType: "midfielder",
+                number: 22,
+                nationality: "Egyptian",
+                age: 30,
+                height: "178 cm",
+                weight: "76 kg",
+                image: "pices/mehoo.jpg",
+                badgePhoto: "pices/mehoo.jpg",
+                goals: 52,
+                assists: 29,
+                appearances: 36,
+                rating: 8.0,
+                bio: "Mehoo brings Premier League experience to SHADA FC. The towering midfielder is known for his aerial dominance and leadership in the midfield. Mehoo joined the team in 2021 and has been a rock in the center of the park.",
+                achievements: [
+                    "Team Vice-Captain (2024-Present)",
+                    "Midfielder of the Year (2024)",
+                    "Most Clean Sheets (2025 Season)"
+                ]
+            },
+            {
+                id: 4,
+                name: "Chizy",
+                position: "Left-Back",
+                positionType: "defender",
+                number: 81,
+                nationality: "Nigeria",
+                age: 24,
+                height: "188 cm",
+                weight: "70 kg",
+                image: "pices/Chizy.jpg",
+                badgePhoto: "pices/Chizy.jpg",
+                goals: 31,
+                assists: 68,
+                appearances: 30,
+                rating: 7.5,
+                bio: "Chizy is a product of the SHADA FC youth academy. The Left-Back is known for his pace and finishing ability. Chizy has been with the club since his teenage years and embodies the team's fighting spirit.",
+                achievements: [
+                    "Academy Graduate of the Year (2025)",
+                    "Most Assists by Forward (2025)",
+                    "Tackler of the Season (2025)"
+                ]
+            },
+            {
+                id: 5,
+                name: "Accolade",
+                position: "Midfielder",
+                positionType: "midfielder",
+                number: 11,
+                nationality: "Nigeria",
+                age: 27,
+                height: "185 cm",
+                weight: "83 kg",
+                image: "pices/accolade.jpg",
+                badgePhoto: "pices/accolade.jpg",
+                goals: 12,
+                assists: 15,
+                appearances: 35,
+                rating: 7.5,
+                bio: "Accolade is the engine room of SHADA FC's midfield. His work rate, vision, and passing range make him a complete midfielder. Accolade joined in 2021 and quickly became a fan favorite with his consistent performances.",
+                achievements: [
+                    "Player of the Month (September 2025)",
+                    "Most Man of the Match Awards (2025)",
+                    "Midfielder of the Year (2025)"
+                ]
+            },
+            {
+                id: 6,
+                name: "Obinna",
+                position: "Center-Back",
+                positionType: "defender",
+                number: 17,
+                nationality: "Nigeria",
+                age: 25,
+                height: "172 cm",
+                weight: "68 kg",
+                image: "pices/Obinna.jpg",
+                badgePhoto: "pices/Obinna.jpg",
+                goals: 18,
+                assists: 22,
+                appearances: 33,
+                rating: 6.7,
+                bio: "Obinna is the creative spark in SHADA FC's midfield. The attacking midfielder is known for his dribbling skills, vision, and ability to unlock defenses with his passing. Obinna came through the youth system and is now one of the team's key players.",
+                achievements: [
+                    "Top Assists Provider (2025)",
+                    "Player of the Month (December 2025, May 2025)",
+                    "Best Goal (2025 Season)"
+                ]
+            },
+            {
+                id: 7,
+                name: "Mohammad Nader",
+                position: "Midfielder",
+                positionType: "midfielder",
+                number: 7,
+                nationality: "Egypt",
+                age: 29,
+                height: "170 cm",
+                weight: "75 kg",
+                image: "pices/mohamad.jpg",
+                badgePhoto: "pices/mohamad.jpg",
+                goals: 7,
+                assists: 10,
+                appearances: 31,
+                rating: 7.9,
+                bio: "Mohammad Nader is the defensive midfielder who provides balance to the team. His ability to break up play and transition the ball from defense to attack is crucial to SHADA FC's playing style. Nader joined in 2020 and has been a consistent performer.",
+                achievements: [
+                    "Most Interceptions (2024)",
+                    "Player of the Month (November 2024)",
+                    "Tackling Accuracy Leader (2025)"
+                ]
+            },
+            {
+                id: 8,
+                name: "Dillion Fries",
+                position: "Right Back",
+                positionType: "defender",
+                number: 9,
+                nationality: "South Adfrica",
+                age: 28,
+                height: "184 cm",
+                weight: "78 kg",
+                image: "pices/Dillion.jpg",
+                badgePhoto: "pices/Dillion.jpg",
+                goals: 25,
+                assists: 12,
+                appearances: 34,
+                rating: 6.9,
+                bio: "Dillion Fries is the reliable right back who provides defensive solidity and support in attack for SHADA FC. The South African defender is known for his tackling, positioning, and ability to contribute to both ends of the pitch. Fries joined in 2021 and has been a consistent presence in the team.",
+                achievements: [
+                    "Player of the Season (2024)",
+                    "Top Defender (2024, 2025)"
+                ]
+            },
+            {
+                id: 9,
+                name: "Nak",
+                position: "Midfielder",
+                positionType: "midfielder",
+                number: 39,
+                nationality: "Cambodia",
+                age: 22,
+                height: "176 cm",
+                weight: "70 kg",
+                image: "pices/nak.jpg",
+                badgePhoto: "pices/nak.jpg",
+                goals: 18,
+                assists: 15,
+                appearances: 32,
+                rating: 8.4,
+                bio: "Nak is the speedy winger who provides width and attacking threat from the flanks. His dribbling skills, pace, and ability to cut inside to score goals make him a nightmare for defenders. Nak joined in 2020 and has been a key player in the team's attack.",
+                achievements: [
+                    "Most Dribbles Completed (2025)",
+                    "Player of the Month (February 2025)",
+                    "Fastest Player (2024 Season)"
+                ]
+            },
+            {
+                id: 10,
+                name: "V.DETH",
+                position: "Forward",
+                positionType: "forward",
+                number: 18,
+                nationality: "Cambodia",
+                age: 23,
+                height: "165 cm",
+                weight: "68 kg",
+                image: "pices/Deth.jpg",
+                badgePhoto: "pices/Deth.jpg",
+                goals: 45,
+                assists: 69,
+                appearances: 28,
+                rating: 7.7,
+                bio: "V.DETH is the exciting young forward who represents the future of SHADA FC. His direct style of play, work rate, and eye for goal have made him a fan favorite. V.DETH came through the youth system and is now establishing himself in the first team.",
+                achievements: [
+                    "Best Young Player (2024-2025)",
+                    "Goal of the Month (April 2024)",
+                    "Academy Graduate of the Year (2023)"
+                ]
+            },
+            {
+                id: 11,
+                name: "K.Zamora",
+                position: "Forward",
+                positionType: "forward",
+                number: 12,
+                nationality: "Egypt",
+                age: 24,
+                height: "171 cm",
+                weight: "77 kg",
+                image: "pices/zamora.jpg",
+                badgePhoto: "pices/zamora.jpg",
+                goals: 35,
+                assists: 41,
+                appearances: 10,
+                rating: 7.4,
+                bio: "K.Zamora is the experienced backup forward who provides competition for the number one spot. His goal-scoring ability and experience have been valuable in cup competitions when called upon.",
+                achievements: [
+                    "Clean Sheets in Cup Games (2024)",
+                    "Player of the Match (Cup Final 2025)"
+                ]
+            },
+            {
+                id: 12,
+                name: "Moza",
+                position: "Goalkeepers",
+                positionType: "Goalkeepers",
+                number: 4,
+                nationality: "Egypt",
+                age: 22,
+                height: "176 cm",
+                weight: "70 kg",
+                image: "pices/Goalkeeper Banner.jpg",
+                badgePhoto: "pices/Goalkeeper1.jpg",
+                goals: 4,
+                assists: 1,
+                appearances: 22,
+                rating: 8.3,
+                bio: "Moza is the strong and athletic goalkeeper who provides depth to the backline. His aerial ability and strength in one-on-one situations make him a reliable option when called upon.",
+                achievements: [
+                    "Most Saves in a Season (2025)",
+                    "Player of the Month (March 2025)"
+                ]
+            }
+        ];
+
+        // Generate player cards
+        function generatePlayerCards(playersToShow) {
+            const playersGrid = document.getElementById('players-grid');
+            playersGrid.innerHTML = '';
+            
+            playersToShow.forEach(player => {
+                const card = document.createElement('div');
+                card.className = 'player-card';
+                card.dataset.playerId = player.id;
+                card.dataset.position = player.positionType;
+                
+                // Generate star rating
+                const fullStars = Math.floor(player.rating / 2);
+                const halfStar = (player.rating / 2) % 1 >= 0.5 ? 1 : 0;
+                const emptyStars = 5 - fullStars - halfStar;
+                
+                let starsHTML = '';
+                for (let i = 0; i < fullStars; i++) {
+                    starsHTML += '<i class="fas fa-star"></i>';
+                }
+                if (halfStar) {
+                    starsHTML += '<i class="fas fa-star-half-alt"></i>';
+                }
+                for (let i = 0; i < emptyStars; i++) {
+                    starsHTML += '<i class="far fa-star"></i>';
+                }
+                
+                card.innerHTML = `
+                    <div class="player-image">
+                        <img src="${player.image}" alt="${player.name}">
+                        <div class="player-number">${player.number}</div>
+                        <div class="player-position">${player.position}</div>
+                    </div>
+                    <div class="player-info">
+                        <h3 class="player-name">${player.name}</h3>
+                        <div class="player-nationality">
+                            <i class="fas fa-flag"></i> ${player.nationality}
+                        </div>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">${player.goals}</div>
+                                <div class="stat-label">Goals</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${player.assists}</div>
+                                <div class="stat-label">Assists</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${player.appearances}</div>
+                                <div class="stat-label">Apps</div>
+                            </div>
+                        </div>
+                        <div class="player-rating">
+                            <div class="rating-stars">${starsHTML}</div>
+                            <span class="rating-value">${player.rating}</span>
+                        </div>
+                    </div>
+                `;
+                
+                playersGrid.appendChild(card);
+            });
+            
+            // Add click event to player cards
+            document.querySelectorAll('.player-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const playerId = parseInt(this.dataset.playerId);
+                    const player = players.find(p => p.id === playerId);
+                    showPlayerModal(player);
+                });
+            });
+        }
+
+        // Show player modal
+        function showPlayerModal(player) {
+            const modal = document.getElementById('player-modal');
+            
+            // Set modal content
+            document.getElementById('modal-player-image').src = player.image;
+            document.getElementById('modal-player-name').textContent = player.name;
+            document.getElementById('modal-player-position').textContent = player.position;
+            document.getElementById('modal-player-badge-photo').src = player.badgePhoto;
+            document.getElementById('modal-player-fullname').textContent = player.name;
+            document.getElementById('modal-player-number').textContent = player.number;
+            document.getElementById('modal-player-nationality').textContent = player.nationality;
+            document.getElementById('modal-player-age').textContent = player.age;
+            document.getElementById('modal-player-height').textContent = player.height;
+            document.getElementById('modal-player-weight').textContent = player.weight;
+            document.getElementById('modal-player-goals').textContent = player.goals;
+            document.getElementById('modal-player-assists').textContent = player.assists;
+            document.getElementById('modal-player-appearances').textContent = player.appearances;
+            document.getElementById('modal-player-rating').textContent = player.rating;
+            document.getElementById('modal-player-bio').textContent = player.bio;
+            
+            // Set achievements
+            const achievementsList = document.getElementById('modal-player-achievements');
+            achievementsList.innerHTML = '';
+            player.achievements.forEach(achievement => {
+                const li = document.createElement('li');
+                li.innerHTML = `<i class="fas fa-trophy"></i> ${achievement}`;
+                achievementsList.appendChild(li);
+            });
+            
+            // Show modal
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        document.getElementById('modal-close').addEventListener('click', function() {
+            document.getElementById('player-modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('player-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                let filteredPlayers;
+                
+                if (filter === 'all') {
+                    filteredPlayers = players;
+                } else {
+                    filteredPlayers = players.filter(player => player.positionType === filter);
+                }
+                
+                generatePlayerCards(filteredPlayers);
+            });
+        });
+
+        // Search functionality
+        document.getElementById('player-search').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const filteredPlayers = players.filter(player => 
+                player.name.toLowerCase().includes(searchTerm) || 
+                player.position.toLowerCase().includes(searchTerm) ||
+                player.nationality.toLowerCase().includes(searchTerm)
+            );
+            
+            generatePlayerCards(filteredPlayers);
+        });
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            generatePlayerCards(players);
+        });
+    </script>
+</body>
+</html>
