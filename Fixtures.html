@@ -1,0 +1,1758 @@
+<!DOCTYPE HTML>
+<!--
+	SHADAFC by Deth
+	satyadeth.net | @satyadeth
+	Free for personal and commercial use under the CCA 3.0 license (Satyadeth.net/license)
+-->
+<html>
+<!-- Header -->
+<section id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Logo -->
+                <h1><a href="index.html" id="logo">SHADA FC</a></h1>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <a href="index.html">Homepage</a>
+                    <a href="store.html">Store</a>
+                    <a href="book.html">Book Now</a>
+                    <a href="squad.html">Squad</a>
+                    <a href="About.html">About</a>
+                    <a href="Fixtures.html">Fixtures</a>
+
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .row>.col-12 {
+        width: 100%;
+    }
+
+    .row>.off-12 {
+        margin-left: 100%;
+    }
+</style>
+
+<head>
+    <title>SHADA FC OFFICIAL</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<style>
+    :root {
+        --primary-color: #00529F;
+        --secondary-color: #ED1C24;
+        --accent-color: #FFC72C;
+        --dark-color: #1a1a1a;
+        --light-color: #f5f5f5;
+        --text-color: #333;
+        --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .top-bar {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 8px 0;
+        font-size: 0.85rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .top-bar-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-links a {
+        color: white;
+        transition: var(--transition);
+    }
+
+    .social-links a:hover {
+        color: var(--accent-color);
+    }
+
+    .main-header {
+        padding: 15px 0;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo i {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: var(--transition);
+        position: relative;
+    }
+
+    nav a:hover {
+        color: var(--accent-color);
+    }
+
+    nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--accent-color);
+        transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/stadium/1920/600.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+        animation: fadeInUp 1s ease 0.2s both;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: var(--accent-color);
+        color: var(--dark-color);
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: var(--transition);
+        animation: fadeInUp 1s ease 0.4s both;
+    }
+
+    .btn:hover {
+        background-color: #FFD93D;
+        transform: translateY(-2px);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Section Styles */
+    section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-title h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    }
+
+    /* Featured Match */
+    .featured-match {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 40px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        box-shadow: var(--card-shadow);
+    }
+
+    .match-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .match-header h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .match-teams {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .team {
+        text-align: center;
+    }
+
+    .team-logo {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+
+    .team-name {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .match-score {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .match-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .match-info-item {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .match-info-label {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    .match-info-value {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .stat-card {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: var(--card-shadow);
+        transition: var(--transition);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .stat-icon {
+        font-size: 3rem;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--dark-color);
+        margin-bottom: 10px;
+    }
+
+    .stat-label {
+        font-size: 1.1rem;
+        color: var(--text-color);
+    }
+
+    /* News Section */
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+    }
+
+    .news-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+        transition: var(--transition);
+    }
+
+    .news-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .news-image {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .news-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .news-card:hover .news-image img {
+        transform: scale(1.1);
+    }
+
+    .news-content {
+        padding: 20px;
+    }
+
+    .news-date {
+        color: var(--secondary-color);
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .news-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        color: var(--dark-color);
+    }
+
+    .news-excerpt {
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .news-link {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: gap 0.3s ease;
+    }
+
+    .news-link:hover {
+        gap: 10px;
+    }
+
+    /* Players Section */
+    .players-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .player-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+        transition: var(--transition);
+        cursor: pointer;
+    }
+
+    .player-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .player-image {
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .player-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .player-number {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: var(--primary-color);
+        color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .player-position {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .player-info {
+        padding: 20px;
+    }
+
+    .player-name {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .player-nationality {
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .player-stats {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .player-stat {
+        text-align: center;
+    }
+
+    .player-stat-value {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .player-stat-label {
+        font-size: 0.8rem;
+        color: #666;
+    }
+
+    /* Table Section */
+    .table-container {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+    }
+
+    .table-header {
+        background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        color: white;
+        padding: 20px;
+    }
+
+    .table-header h3 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: #f8f9fa;
+    }
+
+    th {
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    td {
+        padding: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    tbody tr {
+        transition: background-color 0.2s;
+    }
+
+    tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+
+    .team-position {
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .team-name-cell {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .team-logo-small {
+        width: 30px;
+        height: 30px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    /* Fixtures Section */
+    .fixtures-container {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+    }
+
+    .fixture-item {
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.2s;
+    }
+
+    .fixture-item:hover {
+        background-color: #f8f9fa;
+    }
+
+    .fixture-teams {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .fixture-team {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .fixture-team-logo {
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .fixture-vs {
+        font-weight: 600;
+        color: #666;
+    }
+
+    .fixture-info {
+        text-align: right;
+    }
+
+    .fixture-date {
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .fixture-time {
+        color: #666;
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+        cursor: pointer;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+    }
+
+    .gallery-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        color: white;
+        padding: 20px;
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+        transform: translateY(0);
+    }
+
+    /* Contact Section */
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: var(--card-shadow);
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    .contact-details h4 {
+        margin-bottom: 5px;
+    }
+
+    .contact-details p {
+        color: #666;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-group label {
+        font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    /* Footer */
+    footer {
+        background: linear-gradient(135deg, #1a3a52 0%, #0d2339 100%);
+        color: #ffffff;
+        padding: 70px 0 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .footer-section h3::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background: linear-gradient(90deg, #004d98 0%, #a50044 100%);
+    }
+
+    .footer-links {
+        list-style: none;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: #b8c7d9;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: white;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        transition: all 0.3s;
+    }
+
+    .social-icon:hover {
+        background: linear-gradient(135deg, #004d98 0%, #a50044 100%);
+        transform: translateY(-3px);
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: #b8c7d9;
+    }
+
+    /* Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 2000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal.active {
+        display: flex;
+    }
+
+    .modal-content {
+        background-color: white;
+        max-width: 800px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        border-radius: 10px;
+        position: relative;
+        animation: modalOpen 0.3s ease;
+    }
+
+    @keyframes modalOpen {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        transition: all 0.3s;
+    }
+
+    .modal-close:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .modal-body {
+        padding: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .header-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+        }
+
+        .match-teams {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .match-score {
+            font-size: 2rem;
+        }
+
+        .contact-container {
+            grid-template-columns: 1fr;
+        }
+
+        .gallery-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* Loading Spinner */
+    .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid var(--primary-color);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Notification Toast */
+    .toast {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transform: translateX(400px);
+        transition: transform 0.3s ease;
+        z-index: 3000;
+    }
+
+    .toast.show {
+        transform: translateX(0);
+    }
+
+    .toast-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .toast.success .toast-icon {
+        background-color: #10b981;
+    }
+
+    .toast.error .toast-icon {
+        background-color: #ef4444;
+    }
+
+    .toast.info .toast-icon {
+        background-color: var(--primary-color);
+    }
+
+    .toast-message {
+        flex: 1;
+    }
+
+    .toast-close {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #666;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <h2>Welcome to Shada FC</h2>
+                    <p>Professional football club dedicated to excellence both on and off the pitch</p>
+                    <a href="squad.html" class="btn">Meet Our Team</a>
+                </div>
+            </section>
+
+            <!-- Featured Match -->
+            <section class="container">
+                <div class="featured-match">
+                    <div class="match-header">
+                        <h3>Next Match</h3>
+                        <p>Elite Soccer Tournament - Round 1</p>
+                    </div>
+                    <div class="match-teams">
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="pices/sfclogotransparent.png" class="logo-size">
+                                <style>
+                                    .logo-size {
+                                        height: 180px;
+                                        margin: 0px 0px 15px;
+                                    }
+                                </style>
+
+                            </div>
+                            <div class="team-name">Shada FC</div>
+                        </div>
+                        <div class="match-score">VS</div>
+                        <div class="team">
+                            <div class="team-logo">
+                                <img src="pices/undp.png" class="logo-size-undp">
+                                <style>
+                                    .logo-size-undp {
+                                        height: 160px;
+                                        margin: 0px 0px 15px;
+                                    }
+                                </style>
+
+                            </div>
+                            <div class="team-name">United Peace Fc</div>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <div class="match-info-item">
+                            <span class="match-info-label">Date</span>
+                            <span class="match-info-value">November 22, 2025</span>
+                        </div>
+                        <div class="match-info-item">
+                            <span class="match-info-label">Time</span>
+                            <span class="match-info-value">11:00 AM</span>
+                        </div>
+                        <div class="match-info-item">
+                            <span class="match-info-label">Venue</span>
+                            <span class="match-info-value">Platinum Sport Center</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="section-title">
+                    <h2>Club Statistics</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Trophies Won</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Squad Players</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Matches This Season</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="stat-number">185</div>
+                        <div class="stat-label">Goals Scored</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest News -->
+            <section class="container" style="background-color: #f8f9fa;">
+                <div class="section-title">
+                    <h2>Latest News</h2>
+                </div>
+                <div class="news-grid" id="latest-news">
+                    <!-- News items will be loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Team Page -->
+        <div id="team-page" class="page">
+            <section class="container">
+                <div class="section-title">
+                    <h2>Our Squad</h2>
+                </div>
+                <div class="players-grid" id="players-grid">
+                    <!-- Players will be loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Fixtures Page -->
+        <div id="fixtures-page" class="page">
+            <section class="container">
+                <div class="section-title">
+                    <h2>Fixtures & Results</h2>
+                </div>
+                <div class="fixtures-container">
+                    <div class="table-header">
+                        <h3>League Table</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Team</th>
+                                <th>P</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GF</th>
+                                <th>GA</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody id="league-table">
+                            <tr>
+                                <td>1</td>
+                                <td>SHADA FC</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>UNITED PEACE FC</td>
+                                <td>10</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Never Lose FC</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Domrey FC</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="fixtures-container" style="margin-top: 30px;">
+                    <div class="table-header">
+                        <h3>Upcoming Matches</h3>
+                    </div>
+                    <div id="fixtures-list">
+                        <!-- Fixtures will be loaded here -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- News Page -->
+        <div id="news-page" class="page">
+            <section class="container">
+                <div class="section-title">
+                    <h2>All News</h2>
+                </div>
+                <div class="news-grid" id="all-news">
+                    <!-- News items will be loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Gallery Page -->
+        <div id="gallery-page" class="page">
+            <section class="container">
+                <div class="section-title">
+                    <h2>Gallery</h2>
+                </div>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gallery items will be loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <section class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>60m road, Kick-Off Soccer Club<br>Phnom Penh, Cambodia</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+855 89 407 953</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>shadafccambodia@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday: 9AM - 10PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Shada FC</h3>
+                    <p>Professional football club dedicated to excellence both on and off the pitch. Join us in our
+                        journey to greatness!</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1DCw9bJSBf/?mibextid=wwXIfr" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@shada_fc?_t=ZS-90vZB2JcKFL&_r=1" class="social-icon"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/shada_fc?igsh=MWVtcms0ZHdxNnV4" class="social-icon"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-page="home">Home</a></li>
+                        <li><a href="store.html" data-page="team">Stor</a></li>
+                        <li><a href="Fixtures.html" data-page="fixtures">Fixtures</a></li>
+                        <li><a href="About.html" data-page="news">About</a></li>
+                        <li><a href="squad.html" data-page="gallery">Squad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Club Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Achievements</a></li>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Sponsorship</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and news.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email"
+                            style="padding: 10px; width: 100%; margin-bottom: 10px; border-radius: 5px; border: none;">
+                        <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Shada FC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Player Details -->
+    <div class="modal" id="player-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="player-details">
+                <!-- Player details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <div class="toast-message" id="toast-message">Message sent successfully!</div>
+        <button class="toast-close" onclick="hideToast()">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script>
+        // Simulated Backend API
+        class FootballClubAPI {
+            constructor() {
+                this.baseURL = 'https://api.shadafc.com';
+                this.initData();
+            }
+
+            initData() {
+                // Initialize data if not exists
+                if (!localStorage.getItem('shadafc_data')) {
+                    const initialData = {
+                        players: [
+                            {
+                                id: 1,
+                                name: "David Chen",
+                                position: "Goalkeeper",
+                                number: 1,
+                                nationality: "Cambodia",
+                                age: 28,
+                                height: "188 cm",
+                                weight: "82 kg",
+                                goals: 0,
+                                assists: 2,
+                                appearances: 32,
+                                cleanSheets: 15,
+                                image: "https://picsum.photos/seed/player1/400/500.jpg",
+                                bio: "Experienced goalkeeper with excellent reflexes and leadership qualities."
+                            },
+                            {
+                                id: 2,
+                                name: "Sokha Mean",
+                                position: "Defender",
+                                number: 4,
+                                nationality: "Cambodia",
+                                age: 26,
+                                height: "182 cm",
+                                weight: "78 kg",
+                                goals: 5,
+                                assists: 3,
+                                appearances: 34,
+                                tackles: 45,
+                                image: "https://picsum.photos/seed/player2/400/500.jpg",
+                                bio: "Versatile defender known for his tactical intelligence and reading of the game."
+                            },
+                            {
+                                id: 3,
+                                name: "James Wilson",
+                                position: "Defender",
+                                number: 5,
+                                nationality: "England",
+                                age: 30,
+                                height: "190 cm",
+                                weight: "85 kg",
+                                goals: 8,
+                                assists: 2,
+                                appearances: 36,
+                                tackles: 52,
+                                image: "https://picsum.photos/seed/player3/400/500.jpg",
+                                bio: "Premier League experienced center-back with aerial dominance."
+                            },
+                            {
+                                id: 4,
+                                name: "Michael Brown",
+                                position: "Midfielder",
+                                number: 8,
+                                nationality: "Australia",
+                                age: 27,
+                                height: "178 cm",
+                                weight: "73 kg",
+                                goals: 12,
+                                assists: 15,
+                                appearances: 35,
+                                passes: 1250,
+                                image: "https://picsum.photos/seed/player4/400/500.jpg",
+                                bio: "Engine room of the midfield with exceptional work rate and vision."
+                            },
+                            {
+                                id: 5,
+                                name: "Narong Chea",
+                                position: "Midfielder",
+                                number: 10,
+                                nationality: "Cambodia",
+                                age: 25,
+                                height: "172 cm",
+                                weight: "68 kg",
+                                goals: 18,
+                                assists: 22,
+                                appearances: 33,
+                                passes: 980,
+                                image: "https://picsum.photos/seed/player5/400/500.jpg",
+                                bio: "Creative playmaker with exceptional dribbling skills."
+                            },
+                            {
+                                id: 6,
+                                name: "Carlos Mendez",
+                                position: "Forward",
+                                number: 9,
+                                nationality: "Spain",
+                                age: 28,
+                                height: "184 cm",
+                                weight: "78 kg",
+                                goals: 25,
+                                assists: 12,
+                                appearances: 34,
+                                shots: 89,
+                                image: "https://picsum.photos/seed/player6/400/500.jpg",
+                                bio: "Prolific striker with clinical finishing ability."
+                            }
+                        ],
+                        news: [
+                            {
+                                id: 1,
+                                title: "Shada FC Signs Star Striker from Pakistan",
+                                excerpt: "The club is delighted to announce the signing of Rashid Ali from La Liga...",
+                                date: "2025-11-07",
+                                image: "https://picsum.photos/seed/news1/400/250.jpg",
+                                content: "Full article content here..."
+                            },
+                            {
+                                id: 2,
+                                title: "Victory in the Derby Match",
+                                excerpt: "A stunning performance against our rivals brings home three crucial points...",
+                                date: "2023-12-18",
+                                image: "https://picsum.photos/seed/news2/400/250.jpg",
+                                content: "Full article content here..."
+                            },
+                            {
+                                id: 3,
+                                title: "Academy Graduates Make First Team Debut",
+                                excerpt: "Two young talents from our academy make their professional debut...",
+                                date: "2023-12-15",
+                                image: "https://picsum.photos/seed/news3/400/250.jpg",
+                                content: "Full article content here..."
+                            }
+                        ],
+                        fixtures: [
+                            {
+                                id: 1,
+                                homeTeam: "Shada FC",
+                                awayTeam: "Phnom Penh Crown",
+                                date: "2023-12-25",
+                                time: "19:00",
+                                venue: "National Stadium",
+                                status: "upcoming"
+                            },
+                            {
+                                id: 2,
+                                homeTeam: "Shada FC",
+                                awayTeam: "Visakha FC",
+                                date: "2023-12-28",
+                                time: "19:00",
+                                venue: "National Stadium",
+                                status: "upcoming"
+                            },
+                            {
+                                id: 3,
+                                homeTeam: "Boeung Ket",
+                                awayTeam: "Shada FC",
+                                date: "2023-12-20",
+                                time: "19:00",
+                                venue: "Phnom Penh Stadium",
+                                status: "completed",
+                                score: "2-1"
+                            }
+                        ],
+                        leagueTable: [
+                            { position: 1, team: "Phnom Penh Crown", played: 14, won: 10, drawn: 2, lost: 2, gf: 28, ga: 10, gd: 18, points: 32 },
+                            { position: 2, team: "Shada FC", played: 14, won: 9, drawn: 3, lost: 2, gf: 25, ga: 12, gd: 13, points: 30 },
+                            { position: 3, team: "Boeung Ket", played: 14, won: 8, drawn: 4, lost: 2, gf: 24, ga: 11, gd: 13, points: 28 },
+                            { position: 4, team: "Visakha FC", played: 14, won: 7, drawn: 3, lost: 4, gf: 22, ga: 15, gd: 7, points: 24 },
+                            { position: 5, team: "Nagaworld", played: 14, won: 6, drawn: 4, lost: 4, gf: 20, ga: 16, gd: 4, points: 22 }
+                        ],
+                        gallery: [
+                            { id: 1, title: "Match Day Victory", image: "https://picsum.photos/seed/gallery1/400/300.jpg" },
+                            { id: 2, title: "Training Session", image: "https://picsum.photos/seed/gallery2/400/300.jpg" },
+                            { id: 3, title: "Team Celebration", image: "https://picsum.photos/seed/gallery3/400/300.jpg" },
+                            { id: 4, title: "Fans Support", image: "https://picsum.photos/seed/gallery4/400/300.jpg" },
+                            { id: 5, title: "Academy Training", image: "https://picsum.photos/seed/gallery5/400/300.jpg" },
+                            { id: 6, title: "Trophy Presentation", image: "https://picsum.photos/seed/gallery6/400/300.jpg" }
+                        ]
+                    };
+                    localStorage.setItem('shadafc_data', JSON.stringify(initialData));
+                }
+            }
+
+            getData() {
+                return JSON.parse(localStorage.getItem('shadafc_data'));
+            }
+
+            async getPlayers() {
+                // Simulate API call
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const data = this.getData();
+                        resolve(data.players);
+                    }, 500);
+                });
+            }
+
+            async getPlayerById(id) {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const data = this.getData();
+                        const player = data.players.find(p => p.id === parseInt(id));
+                        resolve(player);
+                    }, 300);
+                });
+            }
+
+            async getNews() {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const data = this.getData();
+                        resolve(data.news);
+                    }, 500);
+                });
+            }
+
+            async getFixtures() {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const data = this.getData();
+                        resolve(data.fixtures);
+                    }, 500);
+                });
+            }
+
+            async getLeagueTable() {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const data = this.getData();
+                        resolve(data.leagueTable);
+                    }, 500);
+                });
+            }
+
+            async getGallery() {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        const data = this.getData();
+                        resolve(data.gallery);
+                    }, 500);
+                });
+            }
+
+            async sendContactForm(formData) {
+                // Simulate API call to send contact form
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        console.log('Contact form submitted:', formData);
+                        resolve({ success: true, message: 'Message sent successfully!' });
+                    }, 1000);
+                });
+            }
+
+            async subscribeNewsletter(email) {
+                // Simulate API call for newsletter subscription
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        console.log('Newsletter subscription:', email);
+                        resolve({ success: true, message: 'Successfully subscribed to newsletter!' });
+                    }, 500);
+                });
+            }
+        }
+
+        // Initialize API
+        const api = new FootballClubAPI();
+
+        // Page Management
+        class PageManager {
+            constructor() {
+                this.currentPage = 'home';
+                this.init();
+            }
+
+            init() {
+                this.setupNavigation();
+                this.loadPage('home');
+            }
+
+            setupNavigation() {
+                // Navigation links
+                document.querySelectorAll('nav a[data-page]').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const page = link.dataset.page;
+                        this.loadPage(page);
+                    });
+                });
+
+                // Footer links
+                document.querySelectorAll('.footer-links a[data-page]').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const page = link.dataset.page;
+                        this.loadPage(page
